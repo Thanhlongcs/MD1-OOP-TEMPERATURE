@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Celcius</title>
+</head>
+<body>
+<script>
+
+    class Temperature {
+        constructor(celcius){
+            this.celcius = celcius;
+        }
+        getFaraday () {
+            return this.celcius*9/5 + 32;
+        }
+        getKelvin () {
+            return this.celcius + 273.15;
+        }
+    }
+    let temperature = new Temperature (25)
+    document.write(temperature.celcius + ' độ C đổi sang độ F là ' + temperature.getFaraday() + '<br>');
+    document.write(temperature.celcius + ' độ C đổi sang độ K là ' + temperature.getKelvin());
+
+</script>
+</body>
+</html>
